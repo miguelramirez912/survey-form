@@ -1,0 +1,101 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* width: 100vw;
+    height: 100vh;*/
+    margin: 0; 
+    padding: 0;
+    color: azure;
+}
+.background{
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    background-image: url("https://images.unsplash.com/photo-1572675339312-3e8b094a544d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+}
+#title{
+    width: 90%;
+    margin: 2rem auto 1rem auto;;
+    text-align: center;
+}
+#description{
+    text-align: center;
+    margin: .75rem auto;
+    width: 90%;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+form{
+    background-color:#512DA8;
+    opacity: 0.9;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    font-size: .6em;
+    position: relative;
+    bottom: 0.15rem;
+}
+.question{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+.input{
+    max-width: 100%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: .35rem;
+    color: #495057;
+}
+#comments{
+    font-size: 1.1rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: .25rem;
+    font-size: 1.1rem;
+}
+[type=radio],[type=checkbox]{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .5rem;
+}
+
+#submit{
+    margin: 1.5rem 0;
+    height: 2.5rem;
+    border: none;
+    background: #009688;
+    color: aliceblue;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 700px){
+    form{
+        width: 75%;
+        margin: auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1000px){
+    form{
+        width: 55%;
+        margin: auto;
+        padding: 3rem;
+    }
+}

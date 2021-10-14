@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background">
+
+        <h1 id="title">Encuesta de Satisfacción SBS transit</h1>
+        <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar el servicio.</p>
+        
+        
+        <form action="" id="survey-form">
+            <label class="question" for="name" id="name-label">Nombre:</label>
+            <input class="input" type="text" id="name" placeholder="Ingresa tu nombre" required>
+            <label class="question" for="email" id="email-label">Email</label>
+            <input class="input" type="email" id="email" placeholder="Ingresa tu Email" required>
+            <label class="question" for="number" id="number-label">Edad <span>(opcional)</span></label>
+            <input class="input" type="number" id="number" min="12" max="80" placeholder="Ingresa tu edad">
+            
+            <p class="question">¿Cual de estas opciones describe tu mejor tu ocupación?</p>
+            <select class="input" name="ocupation" id="dropdown">
+                <option selected="" disabled="" value="">Elije tu ocupación</option>
+                <option value="student">Estudiante</option>
+                <option value="employee">Empleado</option>
+                <option value="worker">Trabajador independiente</option>
+                <option value="house">Ama de casa</option>
+            </select>
+            
+            <p class="question">¿Como consideras el precio del pasaje?</p>
+            <label for="cheap">
+                <input type="radio" id="cheap" value="cheap" name="ticket-price"> Barato
+            </label>
+            <label for="just">
+                <input type="radio" id="just" value="just" name="ticket-price"> Justo
+            </label>
+            <label for="expensive">
+                <input type="radio" id="expensive" value="expensive" name="ticket-price"> Caro
+            </label>
+            
+            <p class="question">¿Cual es la ruta que utilizas?</p>
+            <select class="input" name="route" id="route">
+                <option selected disabled value="">Elije tu ruta</option>
+                <option value="route1">Ruta Norte</option>
+                <option value="route2">Ruta Sur</option>
+                <option value="route3">Ruta Centro</option>
+            </select>
+            
+            <p class="question">¿En cuanto a seguridad, que mejoraria?</p>
+            <label for="panic">
+                <input type="checkbox" id="panic" value="panic" name="security"> Boton de panico
+            </label>
+            <label for="onboard">
+                <input type="checkbox" id="onboard" value="onboard" name="security"> Personal de seguridad a bordo
+            </label>
+            <label for="monitoring">
+                <input type="checkbox" id="monitoring" value="monitoring" name="security"> Monitoreo en tiempo real
+            </label>
+            <label for="revision">
+                <input type="checkbox" id="revision" value="revision" name="security"> Operativos de revisión
+            </label>
+            
+            <p class="question">¿En cuanto a confort, que mejoraria?</p>
+            <label for="seating">
+                <input type="checkbox" id="seating" value="seating" name="comfort"> Asientos
+            </label>
+            <label for="ventilation">
+                <input type="checkbox" id="ventilation" value="ventilation" name="comfort"> Ventilación
+            </label>
+            <label for="space">
+                <input type="checkbox" id="space" value="space" name="comfort"> Diseño de espacio</label>
+            <label for="suspension">
+                <input type="checkbox" id="suspension" value="suspension" name="comfort"> Suspención de los autobuses
+            </label>
+            
+            <p class="question flex" >¿En cuanto al servicio, que mejoraria?</p>
+            <label for="schedule">
+                <input type="checkbox" id="schedule" value="schedule" name="service"> Horarios de servicio
+            </label>
+            <label for="cleaning">
+                <input type="checkbox" id="cleaning" value="cleaning" name="service">
+                Limpieza
+            </label>
+            <label for="bus-id">
+                <input type="checkbox" id="bus-id" value="bus-id" name="service">
+                Identificación de vehículos
+            </label>
+            <label for="information">
+                <input type="checkbox" id="information" value="information" name="service">
+            Información
+            </label>
+            
+            <p class="question">Comentarios o sugerencias:</p>
+            <textarea class="input" name="comments" id="comments" cols="30" rows="5" placeholder="Ingresa aqui tus sugerencias"></textarea>
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </div>
+
+
+</body>
+</html>
